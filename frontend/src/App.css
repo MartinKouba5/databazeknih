@@ -8,10 +8,11 @@ body {
   color: #333;
 }
 
-h1{
+h1 {
   text-align: center;
   color: #ffffff;
 }
+
 h2 {
   text-align: center;
   color: #444;
@@ -61,7 +62,9 @@ form h2 {
   color: #0056b3;
 }
 
-form input, form select, form button {
+form input,
+form select,
+form button {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -110,4 +113,68 @@ ul li span {
 /* Hlavní obsah */
 main {
   padding: 20px;
+}
+
+/* Styly pro filtry */
+.filters {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.filters input[type="date"] {
+  padding: 9px;
+}
+
+/* Výpis knih */
+.book-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.book-list li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.book-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.book-list h3 {
+  margin: 0 0 10px;
+  color: #0056b3;
+}
+
+.book-list p {
+  margin: 5px 0;
+  color: #555;
 }
